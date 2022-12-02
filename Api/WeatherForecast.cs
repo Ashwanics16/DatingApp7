@@ -1,6 +1,8 @@
+using Api.Controllers;
+
 namespace Api;
 
-public class WeatherForecast
+public class WeatherForecast : BaseApiController
 {
     public DateOnly Date { get; set; }
 
