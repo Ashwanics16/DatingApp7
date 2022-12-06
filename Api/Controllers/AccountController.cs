@@ -26,7 +26,7 @@ namespace Api.Controllers
             using var hmac = new HMACSHA512();
              var user  = new AppUser()
              {
-                UserName=registerDto.UserName.ToLower(),
+                UserName=registerDto.UserName.ToString(),
                 PasswordHash =hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt=hmac.Key
              };

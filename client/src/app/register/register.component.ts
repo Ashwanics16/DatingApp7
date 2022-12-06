@@ -1,5 +1,6 @@
 import { outputAst } from '@angular/compiler';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { AccountService } from '../_Services/account.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
   model:any ={}
 
-  constructor( private accountService:AccountService) { }
+  constructor( private accountService:AccountService ) { }
 
   ngOnInit(): void {
   }
